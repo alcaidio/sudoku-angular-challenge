@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SudokuComponent } from './sudoku.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    
-  `,
+  imports: [SudokuComponent],
+  template: `<main class="h-screen w-screen">
+    <app-sudoku />
+  </main>`,
   styles: [],
 })
-export class AppComponent {
-  title = 'sudoku';
-}
+export class AppComponent {}
